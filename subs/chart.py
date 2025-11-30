@@ -25,7 +25,7 @@ data = pd.DataFrame({
 data_melted = data.melt(id_vars="Month", var_name="Segment", value_name="Revenue")
 
 # Create figure with exact 512x512 pixels
-plt.figure(figsize=(8, 8))  # 8 inches * 64 dpi = 512 px
+plt.figure(figsize=(5.12, 5.12), dpi=100)  # 8 inches * 64 dpi = 512 px
 sns.lineplot(
     data=data_melted,
     x="Month",
